@@ -1,8 +1,8 @@
-package sv.edu.udb.spring_database_hibernate.repository.domain;
+package sv.edu.udb.repository;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import sv.edu.udb.spring_database_hibernate.repository.domain.Post;
+import sv.edu.udb.repository.domain.Post;
 import java.util.List;
 import java.util.Objects;
 @Repository
@@ -38,4 +38,3 @@ public class PostRepository {
                 .executeUpdate();
     }
 }
-

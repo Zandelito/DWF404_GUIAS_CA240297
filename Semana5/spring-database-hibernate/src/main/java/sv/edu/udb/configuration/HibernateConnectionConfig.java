@@ -1,5 +1,4 @@
-package sv.edu.udb.spring_database_hibernate.configuration;
-
+package sv.edu.udb.configuration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -69,5 +68,3 @@ public class HibernateConnectionConfig {
         return hibernateProperties;
     }
 }
-
-
