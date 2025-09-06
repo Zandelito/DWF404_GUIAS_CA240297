@@ -1,4 +1,4 @@
-package service;
+package sv.edu.udb.service;
 import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -7,14 +7,12 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import sv.edu.udb.spring_api_rest.repository.PostRepository;
-import sv.edu.udb.spring_api_rest.repository.domain.Post;
-import sv.edu.udb.spring_api_rest.controller.request.PostRequest;
-import sv.edu.udb.spring_api_rest.controller.response.PostResponse;
-import sv.edu.udb.spring_api_rest.service.implementation.PostServiceImpl;
-import sv.edu.udb.spring_api_rest.service.mapper.PostMapper;
-
-
+import sv.edu.udb.repository.PostRepository;
+import sv.edu.udb.repository.domain.Post;
+import sv.edu.udb.controller.request.PostRequest;
+import sv.edu.udb.controller.response.PostResponse;
+import sv.edu.udb.service.implementation.PostServiceImpl;
+import sv.edu.udb.service.mapper.PostMapper;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;

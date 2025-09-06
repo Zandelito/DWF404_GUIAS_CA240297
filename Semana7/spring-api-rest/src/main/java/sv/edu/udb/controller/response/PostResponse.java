@@ -1,5 +1,4 @@
-package sv.edu.udb.spring_api_rest.controller.response;
-
+package sv.edu.udb.controller.response;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

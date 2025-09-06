@@ -1,15 +1,14 @@
-package sv.edu.udb.spring_api_rest.service.implementation;
+package sv.edu.udb.service.implementation;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import sv.edu.udb.spring_api_rest.controller.request.PostRequest;
-import sv.edu.udb.spring_api_rest.controller.response.PostResponse;
-import sv.edu.udb.spring_api_rest.repository.PostRepository;
-import sv.edu.udb.spring_api_rest.repository.domain.Post;
-import sv.edu.udb.spring_api_rest.service.PostService;
-import sv.edu.udb.spring_api_rest.service.mapper.PostMapper;
-
+import sv.edu.udb.controller.request.PostRequest;
+import sv.edu.udb.controller.response.PostResponse;
+import sv.edu.udb.repository.PostRepository;
+import sv.edu.udb.repository.domain.Post;
+import sv.edu.udb.service.PostService;
+import sv.edu.udb.service.mapper.PostMapper;
 import java.util.List;
 @Service
 @RequiredArgsConstructor
@@ -49,4 +48,3 @@ public class PostServiceImpl implements PostService {
         postRepository.deleteById(id);
     }
 }
-

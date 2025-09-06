@@ -1,5 +1,4 @@
-package sv.edu.udb.spring_api_rest.controller.request;
-
+package sv.edu.udb.controller.request;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

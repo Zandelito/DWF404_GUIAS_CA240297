@@ -1,9 +1,8 @@
-package sv.edu.udb.spring_api_rest.service.mapper;
-
+package sv.edu.udb.service.mapper;
 import org.mapstruct.Mapper;
-import sv.edu.udb.spring_api_rest.controller.request.PostRequest;
-import sv.edu.udb.spring_api_rest.controller.response.PostResponse;
-import sv.edu.udb.spring_api_rest.repository.domain.Post;
+import sv.edu.udb.controller.request.PostRequest;
+import sv.edu.udb.controller.response.PostResponse;
+import sv.edu.udb.repository.domain.Post;
 import java.util.List;
 @Mapper(componentModel = "spring")
 public interface PostMapper {
@@ -11,4 +10,3 @@ public interface PostMapper {
     List<PostResponse> toPostResponseList(final List<Post> postList);
     Post toPost(final PostRequest postRequest);
 }
-
